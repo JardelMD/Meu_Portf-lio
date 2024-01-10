@@ -1,12 +1,13 @@
-import { HomePage } from "./components/HomePage"
+import "./styles/index.scss"
+import { RoutesMain } from "./routes/RoutesMain"
+
 
 function App() {
  
 
   return (
     <>
-      <HomePage/>
-      
+      <RoutesMain/>   
     </>
   )
 }
