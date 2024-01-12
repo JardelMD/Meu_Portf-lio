@@ -1,6 +1,6 @@
 .title{
     color: var(--color-white);
     font-weight: bold;
-    font-size: 24px;
+    font-size:  clamp(1rem, 0.286rem + 1.905vw, 2rem);
     white-space: nowrap;
 }
