@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { database } from "../../services/database"
 import { ProjectsList } from "./ProjectsList"
+import styles from "./style.module.scss"
 
 export const ProjectsPage = () => {
     const navigate = useNavigate()
@@ -9,12 +10,14 @@ export const ProjectsPage = () => {
     }
     return (
         <>
-            <section>
+            <section className={styles.project}>
+                <header>
+                    <button onClick={backToHomepage}>Voltar</button>
+                </header>
                 <div>
-                <button onClick={backToHomepage}>Voltar</button>
-                <ul>
-                    {database.map(data => <ProjectsList key={data.id} data={data}/>)}
-                </ul>
+                    <ul>
+                        {database.map(data => <ProjectsList key={data.id} data={data} />)}
+                    </ul>
                 </div>
             </section>
         </>
