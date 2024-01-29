@@ -1,13 +1,21 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import styles from "./style.module.scss"
+import { FaExclamationCircle } from "react-icons/fa";
+
 
 export const NotFoundPage = () => {
+    const navigate = useNavigate();
+    const redirectToHome = () => {
+        navigate("/")
+    }
     return (
         <main className={styles.main}>
-            <div className={styles.container}>
-                <h1><span className={styles.error}>Error 404:</span> Página não encontrada</h1>
-                <Link className={styles.button} to="/">Voltar a página de Login</Link>
+            <div >
+                <h1><span className={styles.error}>Error 404:</span> Not Found</h1>
+
+                <button onClick={redirectToHome}>Homepage</button>
             </div>
+            <FaExclamationCircle size={200} color="var(--color-failed)"/>
         </main>
     )
 }
