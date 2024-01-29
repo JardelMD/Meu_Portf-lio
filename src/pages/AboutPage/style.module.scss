@@ -17,8 +17,12 @@
         align-items: center;
 
         // border: 1px solid white;
-        p {
-            // border: 1px solid white;
+        h1 {
+
+            color: var(--color-white);
+            font-weight: bold;
+            font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+            white-space: nowrap;
             margin: 0 10%;
 
         }
@@ -76,7 +80,8 @@
                 //  border: 1px solid black;
                 white-space: nowrap;
                 color: var(--color-black);
-                font-size: clamp(0.875rem, 0.286rem + 1.905vw, 1.875rem);;
+                font-size: clamp(0.875rem, 0.286rem + 1.905vw, 1.875rem);
+                ;
                 font-weight: bold;
             }
 

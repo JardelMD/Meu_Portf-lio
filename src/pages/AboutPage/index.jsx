@@ -12,7 +12,7 @@ export const AboutMePage = () => {
     return (
         <section className={styles.main}>
             <header>
-                <p><Title>Jardel Moreira Dylewski</Title></p>
+                <h1>Jardel Moreira Dylewski</h1>
                 <button onClick={redirectToHome}>Voltar</button>
             </header>
             <div>
