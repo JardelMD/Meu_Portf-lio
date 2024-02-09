@@ -186,8 +186,8 @@ export const database = [
     {
         id:15,
         photo: photo15,
-        linkProject: "hhttps://react-entrega-kenzie-hub-jardel-md.vercel.app/ttps://react-entrega-s3-template-hamburgueria-jardel-md.vercel.app/",
-        linkRepository: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-kenzie-hub-JardelMDtemplate-hamburgueria-JardelMD",
+        linkProject: "https://react-entrega-kenzie-hub-jardel-md.vercel.app/",
+        linkRepository: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-kenzie-hub-JardelMD",
         name: "Kenzie Hub",
         description: "Nesse projeto desenvolvemos um conjunto de páginas com funcionalidades de cadastro, login e o desenvolvimento do CRUD (Create, Read, Update, Delete) para o gerenciamento de tecnologias do usuário. Trabalhamos com várias bibliotecas e gerenciamento de compartilhamento de dados do React JS, entre elas: React Hook Form, React Router Dom, Zod, Context. Além disso, trabalhamos com o consumo de API's por meio do Axios e o utilizamos para gerar as rotas de criação, leitura, atualização e deleção dos dados da API.",
         resources: {
