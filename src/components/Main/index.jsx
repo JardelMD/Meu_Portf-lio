@@ -14,7 +14,7 @@ export const Main = () => {
                 <div className={styles.divAbout}>
                     <img src={Foto} alt="Foto Jardel" />
                     <p>
-                        Olá, me chamo Jardel Moreira Dylewski. Sou formado em Licenciatura em Matemática pela Universidade Federal de Pelotas (UFPel), possuo Mestrado e Doutorado em Matemática Aplicada pela Universidade Federal do Rio Grande do Sul (UFRGS).  Sou desenvolvedor Web Front-End pela <a className={styles.link} href="https://kenzie.com.br/">Kenzie Academy Brasil</a>. Em breve irei concluir meu curso de desenvolvimento web Full-Stack. Durante toda a minha formação tive contato com programação, desenvolvendo trabalhos e projetos de pesquisa. Após a conclusão do meu doutorado, conversando com alguns desenvolvedores formados, tive interesse em ingressar nessa promissora área, e aqui estou!
+                        Olá, me chamo Jardel Moreira Dylewski. Sou formado em Licenciatura em Matemática pela Universidade Federal de Pelotas (UFPel), possuo Mestrado e Doutorado em Matemática Aplicada pela Universidade Federal do Rio Grande do Sul (UFRGS).  Sou desenvolvedor Web Front-End pela <a className={styles.link} href="https://kenzie.com.br/">Kenzie Academy Brasil</a>. Em breve irei concluir meu curso de desenvolvimento web Full Stack. Durante toda a minha formação tive contato com programação, desenvolvendo trabalhos e projetos de pesquisa. Após a conclusão do meu doutorado, conversando com alguns desenvolvedores formados, tive interesse em ingressar nessa promissora área, e aqui estou!
                     </p>
                 </div>
                 <div className={styles.divProjects}>
