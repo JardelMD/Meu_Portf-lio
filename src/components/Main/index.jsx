@@ -22,7 +22,7 @@ export const Main = () => {
                     <ul>
                         {mainProjects.map(data => <MainProjectsList key={data.id} data={data} />)}
                     </ul>
-                    <p>Para mais visualizar mais projetos fornt-end, clique <a href="http://localhost:5173/projects"  target="_blank">aqui</a>.</p>
+                    <p>Para mais visualizar mais projetos fornt-end, <a className={styles.link} href="http://localhost:5173/projects"  target="_blank">clique aqui</a>.</p>
                 </div>
                 <div>
                     <h2> Minhas habilidades como desenvolvedor:</h2>
