@@ -15,6 +15,7 @@ import photo14 from "../assets/14.png"
 import photo15 from "../assets/15.png"
 import photo16 from "../assets/16.png"
 
+
 export const database = [
     {
         id:1,
@@ -197,6 +198,57 @@ export const database = [
     },
     {
         id:16,
+        photo: photo16,
+        linkProject: "https://kenzie-movie-group-t19.vercel.app/",
+        linkRepository: "https://github.com/Kenzie-Academy-Brasil-Developers/KenzieMovie-Group-T19",
+        name: "Kenzie Movie",
+        description: "Nesse projeto Criamos um site de avaliação de filmes, onde você pode criar uma conta e avaliar individualmente os filmes listados. Nosso principal objetivo foi aprimorar nossos conhecimentos em Git Flow, React Js, CRUD e utilização de API's.",
+        resources: {
+            id: 1,
+            language: ["SASS", "React", "Git", "Github"]
+        }
+    },
+]
+
+export const mainProjects = [
+    {
+        id:1,
+        photo: photo9,
+        linkProject: "https://kenzie-academy-brasil-developers.github.io/open-music-template-JardelMD/",
+        linkRepository: "https://github.com/Kenzie-Academy-Brasil-Developers/open-music-template-JardelMD",
+        name: "Open Music",
+        description: "Neste projeto, desenvolvemos nossas habilidades em JavaScript, CSS e HTML. As principais funcionalidades desenvolvidas foram: técnicas de CSS, métodos de array e persistência de dados no localstorage através da função Dark Mode, que muda o tema completo da nossa página.",
+        resources: {
+            id: 1,
+            language: ["HTML", "CSS", "Javascript"]
+        }
+    },
+    {
+        id:2,
+        photo: photo14,
+        linkProject: "https://react-entrega-s3-template-hamburgueria-jardel-md.vercel.app/",
+        linkRepository: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-template-hamburgueria-JardelMD",
+        name: "Hamburgueria da Kenzie",
+        description: "Nesse projeto desenvolvemos um conjunto de funcionalidades em React JS, utilizando efeitos, hooks de estado, interações com APIs, criação de modal, estilização em SASS e responsividade.",
+        resources: {
+            id: 1,
+            language: ["SASS", "React"]
+        }
+    },
+    {
+        id:3,
+        photo: photo15,
+        linkProject: "https://react-entrega-kenzie-hub-jardel-md.vercel.app/",
+        linkRepository: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-kenzie-hub-JardelMD",
+        name: "Kenzie Hub",
+        description: "Nesse projeto desenvolvemos um conjunto de páginas com funcionalidades de cadastro, login e o desenvolvimento do CRUD (Create, Read, Update, Delete) para o gerenciamento de tecnologias do usuário. Trabalhamos com várias bibliotecas e gerenciamento de compartilhamento de dados do React JS, entre elas: React Hook Form, React Router Dom, Zod, Context. Além disso, trabalhamos com o consumo de API's por meio do Axios e o utilizamos para gerar as rotas de criação, leitura, atualização e deleção dos dados da API.",
+        resources: {
+            id: 1,
+            language: ["SASS", "React"]
+        }
+    },
+    {
+        id:4,
         photo: photo16,
         linkProject: "https://kenzie-movie-group-t19.vercel.app/",
         linkRepository: "https://github.com/Kenzie-Academy-Brasil-Developers/KenzieMovie-Group-T19",
