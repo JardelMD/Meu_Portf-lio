@@ -26,7 +26,7 @@ export const Main = () => {
                 </div>
                 <div>
                     <h2> Minhas habilidades como desenvolvedor:</h2>
-                    <div>
+                    <div className={styles.divHab}>
                         <p>Front-End:</p>
                         <ul>
                             <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" ><FaHtml5 size={50} color="#E65100" title="HTML" /></a></li>
@@ -40,7 +40,7 @@ export const Main = () => {
                             <li><a href="https://github.com/" target="_blank" ><FaGithub size={50} color="#4C4C4C" title="Github" /></a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div className={styles.divHab}>
                         <p>Back-End:</p>
                         <ul>
                             <li><a href="https://www.typescriptlang.org/" target="_blank" ><SiTypescript size={50} color="#0D61A9" title="TypeScript" /></a></li>
