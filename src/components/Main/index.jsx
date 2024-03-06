@@ -27,7 +27,7 @@ export const Main = () => {
                     <ul>
                         {mainProjects.map(data => <MainProjectsList key={data.id} data={data} />)}
                     </ul>
-                    <p>Para mais visualizar mais projetos fornt-end, <a className={styles.link} href="/" onClick={redirectToProjectsPage} target="_blank">clique aqui</a>.</p>
+                    <p>Para mais visualizar mais projetos front-end, <a className={styles.link} onClick={redirectToProjectsPage} target="_blank">clique aqui</a>.</p>
                 </div>
                 <div>
                     <h2> Minhas habilidades como desenvolvedor:</h2>
