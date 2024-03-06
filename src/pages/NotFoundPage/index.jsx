@@ -7,6 +7,8 @@ export const NotFoundPage = () => {
     const navigate = useNavigate();
     const redirectToHome = () => {
         navigate("/")
+        window.location.reload()
+        window.scrollTo(0, 0)
     }
     return (
         <main className={styles.main}>
