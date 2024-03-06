@@ -1,26 +1,32 @@
-import { useNavigate } from "react-router-dom";
-import { Title } from "../Title";
+import { useNavigate } from "react-router-dom"
+import { Title } from "../Title"
 import styles from "./style.module.scss"
 import file from "../../files/curriculo.pdf"
 
 export const Header = () => {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
     const redirectToProjectsPage = () => {
         navigate("/projects")
+        window.location.reload()
+        window.scrollTo(0, 0)
     }
     const redirectToAboutMePage = () => {
         navigate("/about")
+        window.location.reload()
+        window.scrollTo(0, 0)
     }
     const redirectToContactsPage = () => {
         navigate("/contacts")
+        window.location.reload()
+        window.scrollTo(0, 0)
     }
     const downloadPDF = () => {
-        const pdfUrl = file;
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.setAttribute('download', 'Currículo Jardel Moreira Dylewski.pdf');
-        document.body.appendChild(link);
-        link.click();
+        const pdfUrl = file
+        const link = document.createElement('a')
+        link.href = pdfUrl
+        link.setAttribute('download', 'Currículo Jardel Moreira Dylewski.pdf')
+        document.body.appendChild(link)
+        link.click()
     }
     return (
         <>

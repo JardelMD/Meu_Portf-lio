@@ -1,17 +1,19 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaNodeJs, FaSass } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa6";
-import { SiTypescript, SiStyledcomponents, SiExpress, SiTailwindcss, SiPostgresql, SiPrisma, SiJest } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
-import styles from "./style.module.scss";
+import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaNodeJs, FaSass } from "react-icons/fa"
+import { FaGitAlt } from "react-icons/fa6"
+import { SiTypescript, SiStyledcomponents, SiExpress, SiTailwindcss, SiPostgresql, SiPrisma, SiJest } from "react-icons/si"
+import { IoLogoJavascript } from "react-icons/io5"
+import styles from "./style.module.scss"
 import Foto from "../../assets/Foto.jpg"
-import { MainProjectsList } from "./MainProjects/index";
-import { mainProjects } from "../../services/database";
-import { useNavigate } from "react-router-dom";
+import { MainProjectsList } from "./MainProjects/index"
+import { mainProjects } from "../../services/database"
+import { useNavigate } from "react-router-dom"
 
 export const Main = () => {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
     const redirectToProjectsPage = () => {
         navigate("/projects")
+        window.location.reload()
+        window.scrollTo(0, 0)
     }
     return (
         <>

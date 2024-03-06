@@ -9,6 +9,8 @@ export const ContactsPage = () => {
     const navigate = useNavigate();
     const redirectToHome = () => {
         navigate("/")
+        window.location.reload()
+        window.scrollTo(0, 0)
     }
     return (
         <section className={styles.main}>

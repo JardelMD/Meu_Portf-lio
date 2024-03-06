@@ -7,6 +7,8 @@ export const ProjectsPage = () => {
     const navigate = useNavigate()
     const backToHomepage = () => {
         navigate("/")
+        window.location.reload()
+        window.scrollTo(0, 0)
     }
     return (
         <>
