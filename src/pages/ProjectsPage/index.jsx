@@ -11,10 +11,12 @@ export const ProjectsPage = () => {
     return (
         <>
             <section className={styles.project}>
-                <header>
-                    <button onClick={backToHomepage}>Voltar</button>
-                </header>
-                <div>
+                <div className={styles.divHeader}>
+                    <header>
+                        <button onClick={backToHomepage}>Voltar</button>
+                    </header>
+                </div>
+                <div className={styles.divProjects}>
                     <ul>
                         {database.map(data => <ProjectsList key={data.id} data={data} />)}
                     </ul>

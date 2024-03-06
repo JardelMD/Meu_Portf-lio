@@ -7,13 +7,12 @@ import { ContactsPage } from "../pages/ContactsPage";
 
 export const RoutesMain = () => {
     return (
-        //Routes é usado para envolver todas as rotas existentes na aplicação  
         <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path="/about" element={<AboutMePage/>} />
-            <Route path="/projects" element={<ProjectsPage/>} />
-            <Route path="/contacts" element={<ContactsPage/>} />
-            <Route path="/*" element={<NotFoundPage/>} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutMePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/*" element={<NotFoundPage />} />
         </Routes>
     );
 };

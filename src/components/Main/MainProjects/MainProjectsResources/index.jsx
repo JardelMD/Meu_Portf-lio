@@ -1,5 +1,5 @@
-export const MainProjectsResources = ({language}) => {
-    return( 
+export const MainProjectsResources = ({ language }) => {
+    return (
         <li>
             <p>{language}</p>
         </li>

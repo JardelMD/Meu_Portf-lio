@@ -6,15 +6,20 @@ import styles from "./style.module.scss";
 import Foto from "../../assets/Foto.jpg"
 import { MainProjectsList } from "./MainProjects/index";
 import { mainProjects } from "../../services/database";
+import { useNavigate } from "react-router-dom";
 
 export const Main = () => {
+    const navigate = useNavigate();
+    const redirectToProjectsPage = () => {
+        navigate("/projects")
+    }
     return (
         <>
             <section className={styles.main}>
                 <div className={styles.divAbout}>
                     <img src={Foto} alt="Foto Jardel" />
                     <p>
-                        Olá, me chamo Jardel Moreira Dylewski. Sou formado em Licenciatura em Matemática pela Universidade Federal de Pelotas (UFPel), possuo Mestrado e Doutorado em Matemática Aplicada pela Universidade Federal do Rio Grande do Sul (UFRGS).  Sou desenvolvedor Web Front-End pela <a className={styles.link} href="https://kenzie.com.br/">Kenzie Academy Brasil</a>. Em breve irei concluir meu curso de desenvolvimento web Full Stack. Durante toda a minha formação tive contato com programação, desenvolvendo trabalhos e projetos de pesquisa. Após a conclusão do meu doutorado, conversando com alguns desenvolvedores formados, tive interesse em ingressar nessa promissora área, e aqui estou!
+                        Olá, me chamo Jardel Moreira Dylewski. Sou formado em Licenciatura em Matemática pela Universidade Federal de Pelotas (UFPel), possuo Mestrado e Doutorado em Matemática Aplicada pela Universidade Federal do Rio Grande do Sul (UFRGS).  Sou desenvolvedor Web Front-End pela <a className={styles.link} href="https://kenzie.com.br/" target="_blank">Kenzie Academy Brasil</a>. Em breve irei concluir meu curso de desenvolvimento web Full Stack. Durante toda a minha formação tive contato com programação, desenvolvendo trabalhos e projetos de pesquisa. Após a conclusão do meu doutorado, conversando com alguns desenvolvedores formados, tive interesse em ingressar nessa promissora área, e aqui estou!
                     </p>
                 </div>
                 <div className={styles.divProjects}>
@@ -22,7 +27,7 @@ export const Main = () => {
                     <ul>
                         {mainProjects.map(data => <MainProjectsList key={data.id} data={data} />)}
                     </ul>
-                    <p>Para mais visualizar mais projetos fornt-end, <a className={styles.link} href="http://localhost:5173/projects"  target="_blank">clique aqui</a>.</p>
+                    <p>Para mais visualizar mais projetos fornt-end, <a className={styles.link} href="/" onClick={redirectToProjectsPage} target="_blank">clique aqui</a>.</p>
                 </div>
                 <div>
                     <h2> Minhas habilidades como desenvolvedor:</h2>
