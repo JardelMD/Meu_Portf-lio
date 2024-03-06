@@ -17,6 +17,7 @@ export const ProjectsPage = () => {
                     </header>
                 </div>
                 <div className={styles.divProjects}>
+                    <h2>Projetos Front-end:</h2>
                     <ul>
                         {database.map(data => <ProjectsList key={data.id} data={data} />)}
                     </ul>
