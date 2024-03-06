@@ -17,7 +17,9 @@ export const NotFoundPage = () => {
 
                 <button onClick={redirectToHome}>Homepage</button>
             </div>
-            <FaExclamationCircle size={200} color="var(--color-failed)"/>
+            <div className={styles.exclamation}>
+                <FaExclamationCircle size={200} color="var(--color-failed)" />
+            </div>
         </main>
     )
 }
