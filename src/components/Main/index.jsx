@@ -1,6 +1,7 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaNodeJs, FaSass } from "react-icons/fa"
+import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaNodeJs, FaSass, FaPython } from "react-icons/fa"
 import { FaGitAlt } from "react-icons/fa6"
-import { SiTypescript, SiStyledcomponents, SiExpress, SiTailwindcss, SiPostgresql, SiPrisma, SiJest } from "react-icons/si"
+import { DiDjango } from "react-icons/di";
+import { SiTypescript, SiStyledcomponents, SiExpress, SiTailwindcss, SiPostgresql, SiPrisma, SiJest, SiSqlite } from "react-icons/si"
 import { IoLogoJavascript } from "react-icons/io5"
 import styles from "./style.module.scss"
 import Foto from "../../assets/Foto.jpg"
@@ -21,11 +22,11 @@ export const Main = () => {
                 <div className={styles.divAbout}>
                     <img src={Foto} alt="Foto Jardel" />
                     <p>
-                        Olá, me chamo Jardel Moreira Dylewski. Sou formado em Licenciatura em Matemática pela Universidade Federal de Pelotas (UFPel), possuo Mestrado e Doutorado em Matemática Aplicada pela Universidade Federal do Rio Grande do Sul (UFRGS).  Sou desenvolvedor Web Front-End pela <a className={styles.link} href="https://kenzie.com.br/" target="_blank">Kenzie Academy Brasil</a>. Em breve irei concluir meu curso de desenvolvimento web Full Stack. Durante toda a minha formação tive contato com programação, desenvolvendo trabalhos e projetos de pesquisa. Após a conclusão do meu doutorado, conversando com alguns desenvolvedores formados, tive interesse em ingressar nessa promissora área, e aqui estou!
+                        Olá, me chamo Jardel Moreira Dylewski. Sou formado em Licenciatura em Matemática pela Universidade Federal de Pelotas (UFPel), possuo Mestrado e Doutorado em Matemática Aplicada pela Universidade Federal do Rio Grande do Sul (UFRGS). Durante toda a minha formação tive contato com programação, desenvolvendo trabalhos e projetos de pesquisa. Após a conclusão do meu doutorado, conversando com alguns desenvolvedores formados, tive interesse em ingressar nessa promissora área, e aqui estou. Atualmente, sou desenvolvedor Web Full Stack pela <a className={styles.link} href="https://kenzie.com.br/" target="_blank">Kenzie Academy Brasil</a>.
                     </p>
                 </div>
                 <div className={styles.divProjects}>
-                    <h2>Meus principais projetos como desenvolvedor web front-end:</h2>
+                    <h2>Principais projetos front-end:</h2>
                     <ul>
                         {mainProjects.map(data => <MainProjectsList key={data.id} data={data} />)}
                     </ul>
@@ -56,6 +57,9 @@ export const Main = () => {
                             <li><a href="https://www.postgresql.org/" target="_blank" ><SiPostgresql size={50} color="#336791" title="PostgreSQL" /></a></li>
                             <li><a href="https://www.prisma.io/" target="_blank"><SiPrisma size={50} color="#2d3748" title="Prisma" /></a></li>
                             <li><a href="https://jestjs.io/pt-BR/" target="_blank"><SiJest size={50} color="#681da8" title="Jest" /></a></li>
+                            <li><a href="https://www.python.org/" target="_blank"><FaPython size={50} title="Python" color="#2d3748" /></a></li>
+                            <li><a href="https://www.djangoproject.com/" target="_blank"><DiDjango size={50} color="#0C4B33" title="Django" /></a></li>
+                            <li><a href="https://sqlite.org/" target="_blank"><SiSqlite size={50} color="#044a64" title="SQLite" /></a></li>
                         </ul>
                     </div>
                 </div>
