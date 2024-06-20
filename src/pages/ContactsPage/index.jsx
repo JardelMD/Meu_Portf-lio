@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./styled.module.scss";
-import { FaLinkedin, FaWhatsappSquare, FaArrowAltCircleRight } from "react-icons/fa";
+import { FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";
 import { Footer } from "../../components/Footer";
 
